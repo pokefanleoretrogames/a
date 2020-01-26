@@ -1,125 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <title>PokefanleoRetrogames</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos-plugs.css">
     <script src="js/jquery-3.4.1.js"></script>
-    <title>Inicio</title>
+    <script async defer src="https://connect.facebook.net/es_LA/sdk.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/sticky-sidebar.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
 </head>
 
 <body>
+    <!-- PLUGIN DE COMENTARIOS -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v5.0"></script>
+    <!-- fin de plugin de comentarios -->
+
     <div class="hoja">
         <header>
-            <a href="index.html"><img src="images/header.jpg" alt=""></a><br>
-            <!-- -----------AQUI VA A IR EL MENU --------------- -->
-            <div class="contenedor-menu">
-               <label for="boton-menu"><img src="images/icon-menu.png" alt=""></label>
-            <input type="checkbox" id="boton-menu">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="index.html">index</a></li>
-                        <li class="submenu"><span>Menu 2 <img src="images/icon-down.png" alt=""></span>
-                            <ul>
-                                <li><a href="#">submenu 1</a></li>
-                                <li><a href="#">submenu 2</a></li>
-                                <li><a href="pagina.html">OTRO GATO</a></li>
-                                <li><a href="#">submenu 4</a></li>
-                                <li><a href="#">submenu 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="1.html">pagina 1</a></li>
-                        <li class="submenu"><span>Menu 4 <img src="images/icon-down.png" alt=""></span>
-                            <ul>
-                                <li><a href="#">submenu 1</a></li>
-                                <li><a href="#">submenu 2</a></li>
-                                <li><a href="#">submenu 3</a></li>
-                                <li><a href="#">submenu 4</a></li>
-                                <li><a href="#">submenu 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="2.html">pagina 2</a></li>
-                    </ul>
-                </nav>
+            <img src="images/header2.jpg" alt="">
+            <div class="encabezado">
+                <a href="index.html"><img src="images/header2.jpg" alt=""></a>
             </div>
-            <!-- ---------------AQUI TERMINA EL MENU----------------- -->
+            <div class="menu-bar">
+                <span class="icon-menu boton-menu"></span>
+            </div>
+
+            <!-- ----------------INICIO DEL MENU---------------- -->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="icon-home"></span>INICIO</a></li>
+                    <li><a href="categorias/juegos-android.html"><span class="icon-android"></span>Juegos Android</a></li>
+                    <li><a href="categorias/juegos-de-pc.html"><span class="icon-desktop"></span>Juegos PC</a></li>
+                    <li class="sub-menu">
+                        <div><span class="icon-gamepad"></span>Pokémon PC/Android<span class="icon-down-open"></span></div>
+                        <ul class="menu-hijo">
+                            <li><a href="pokemon/pc.html">Pokémon PC</a></li>
+                            <li><a href="pokemon/android.html">Pokémon Android</a></li>
+                            <li><a href="pokemon/peliculas.html">Peliculas Pokémon</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <div><span class="icon-gamepad"></span>Roms PC/Android<span class="icon-down-open"></span></div>
+                        <ul class="menu-hijo">
+                            <li><a href="colecciones/crash-bandicoot.html">Crash Bandicoot Todos</a></li>
+                            <li><a href="roms/nintendo-64.html">Juegos de Nintendo 64</a></li>
+                            <li><a href="roms/gamecube.html">Juegos de Nintendo Gamecube</a></li>
+                            <li><a href="roms/nintendo-wii.html">Juegos de Nintendo Wii</a></li>
+                            <li><a href="roms/nintendo-ds.html">Juegos de Nintendo DS</a></li>
+                            <li><a href="roms/gb-gbc-gba.html">Juegos de Game boy y Game boy Advande</a></li>
+                            <li><a href="roms/play-station.html">Juegos de Play Station</a></li>
+                            <li><a href="roms/play-station-2.html">Juegos de Play Station 2</a></li>
+                            <li><a href="roms/psp.html">Juegos de PSP</a></li>
+                            <li><a href="roms/arcade.html">Juegos de Arcade</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tutoriales.html"><span class="icon-play"></span>Tutoriales</a></li>
+                </ul>
+            </nav>
+            <!-- ----------------FIN DEL MENU---------------- -->
         </header>
-        <div class="flex">
-            <main class="principal">
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adassdipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-                <section>
-                    MLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet fugiat qui, eaque cum quo reiciendis et perspiciatis nostrum neque rem, veritatis dicta quasi? Sed, in. Impedit, facilis nostrum error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iste atque quibusdam eaque quae nihil sint enim numquam, ducimus vero. Dicta quae veritatis nisi quisquam culpa esse quibusdam molestias tempora?
-                    <br>
-                    lorem
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam reiciendis numquam excepturi corrupti quas. Ad dolor ipsa sapiente reiciendis, facere quisquam facilis excepturi quaerat culpa suscipit, laboriosam ex in architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo iste in, eaque minus vel laboriosam dolorum vero nostrum, tempora eveniet, quo repellat, temporibus ullam? Quos culpa, rerum asperiores atque?asas
-                </section>
-            </main>
-            <aside>
-                <div class="bloque">
-                    <h3>banner 1</h3>
-                    <img src="images/aside.jpg" alt="">
-                </div>
-                <div class="bloque">
-                    <h3>banner 2</h3>
-                    <img src="images/aside.jpg" alt="">
-                </div>
-                <div class="bloque">
-                    <h3>banner 3</h3>
-                    <img src="images/aside.jpg" alt="">
-                </div>
-            </aside>
+
+        <!-- ------------------ Busqueda de Movil ENTRE HEADER Y PRINCIPAL ------------------ -->
+        
+        <div class="buscar-bar">
+            <span class="icon-search boton-buscar"></span>
         </div>
 
+        <div class="gl-movil">
+            <h3>Buscar</h3>
+            <script async src="https://cse.google.com/cse.js?cx=005208128495834736334:ucvmefrny7u"></script>
+            <div class="gcse-search"></div>
+        </div>
+
+        <!-- ------------------ Busqueda de Movil  ENTRE HEADER Y PRINCIPAL------------------ -->
+        
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="1-entrada-1-link.html"><img src="https://i.ibb.co/gFMrHLm/crssportada.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="1-entrada-lista-link.html"><img src="https://i.ibb.co/58bq80d/legoavengercover.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/wyRmZjB/crshport.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/2q02mLw/littleportada.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/DVW4Rg4/Assasinscreed-Directorcuts.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/CsCzRxM/bully.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/zrSS0Qs/monster-hunter-world-2-1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/Kwd73n6/saols.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/hfxTS2J/agecompleete.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://i.ibb.co/MZ68MY6/dragon-ball-fighterz-cover.jpg" alt=""></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next" style="padding: 10px;"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <main class="principal">
+            <h3>Más Recientes<a href="agregados.html">Ver más</a></h3>
+            <section class="blog">
+                <a href="#" class="entrada">
+                    <img src="images/imagen1.jpg" alt="">
+                    <div class="texto-entrada">
+                        <h4>Titulo de entrada</h4><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque incidunt beatae nesciunt delectus voluptatem, adipisci, corporis quaerat, at quasi voluptatum omnis culpa sint debitis sequi cupiditate! Quos, eaque praesentium dolor. asdfdsdfhgdfjdfhjfghfdghdfg Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates tempora ducimus, sequi expedita facilis odit? Tempore voluptates autem eligendi sequi libero! Ex maxime excepturi in molestias molestiae consequuntur cupiditate, quisquam.
+                    </div>
+                    <span>--- Leer todo ---</span>
+                </a>
+                <a href="#" class="entrada">
+                    <img src="images/imagen1.jpg" alt="">
+                    <div class="texto-entrada">
+                        <h4>Titulo de entrada</h4><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque incidunt beatae nesciunt delectus voluptatem, adipisci, corporis quaerat, at quasi voluptatum omnis culpa sint debitis sequi cupiditate! Quos, eaque praesentium dolor. asdfdsdfhgdfjdfhjfghfdghdfg Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates tempora ducimus, sequi expedita facilis odit? Tempore voluptates autem eligendi sequi libero! Ex maxime excepturi in molestias molestiae consequuntur cupiditate, quisquam.
+                    </div>
+                    <span>--- Leer todo ---</span>
+                </a>
+                <a href="#" class="entrada">
+                    <img src="images/imagen1.jpg" alt="">
+                    <div class="texto-entrada">
+                        <h4>Titulo de entrada</h4><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque incidunt beatae nesciunt delectus voluptatem, adipisci, corporis quaerat, at quasi voluptatum omnis culpa sint debitis sequi cupiditate! Quos, eaque praesentium dolor. asdfdsdfhgdfjdfhjfghfdghdfg Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates tempora ducimus, sequi expedita facilis odit? Tempore voluptates autem eligendi sequi libero! Ex maxime excepturi in molestias molestiae consequuntur cupiditate, quisquam.
+                    </div>
+                    <span>--- Leer todo ---</span>
+                </a>
+            </section>
+            <div class="frase">“Mira detrás de ti, ¡un mono de tres cabezas!”</div>
+            <h3>Últimos Agregados <a href="#">Ver más</a></h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                </div>
+                <!--  Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="padding: padding: 10px;"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="frase">“All your base are belong to us”</div> <!-- -------------------------------------- OTRO SLIDER --------------------------------------------- -->
+            <h3>Últimos Agregados <a href="#">Ver más</a></h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                </div>
+                <!--  Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="padding: padding: 10px;"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="frase">“¡Gracias Mario! ¡Pero nuestra princesa está en otro castillo!”</div> <!-- -------------------------------------- OTRO SLIDER --------------------------------------------- -->
+            <h3>Últimos Agregados <a href="#">Ver más</a></h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/imagen1.jpg" alt=""></a></div>
+                </div>
+                <!--  Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="padding: padding: 10px;"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="frase">"El corazón puede ser débil, pero algunas veces es todo lo que necesitamos"</div>
+        </main>
+        <aside>
+           
+           <!-- ----------------------------- BUSCAR PLUG IN SIDEBAR -------------------------------- -->
+           
+            <div class="bloque">
+                <h3>Buscar</h3>
+                <script async src="https://cse.google.com/cse.js?cx=005208128495834736334:ucvmefrny7u"></script>
+                <div class="gcse-search"></div>
+            </div>
+            
+           <!-- ----------------------------- FIN BUSCAR PLUG IN SIDEBAR -------------------------------- -->   
+            
+            <div class="bloque">
+                <h3>TITULO DE BLOQUE</h3>
+                <a href="#"><img src="https://i.ibb.co/KNGM86s/Nuevo-canal.jpg" alt=""></a>
+            </div>
+            <div class="bloque">
+                <h3>TITULO DE BLOQUE</h3>
+                <a href="#"><img src="https://i.ibb.co/zxPKnJY/Megawid.gif" alt=""></a>
+            </div>
+            
+            <!-- -------------- PLUG IN FACEBOOK SIDEBAR --------- -->
+            
+            <div class="bloque">
+                <h3>FACEBOOK</h3>
+                <center>
+                    <div class="fb-page" data-href="https://www.facebook.com/pokefanleoretrogames" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+                </center>
+            </div>
+            
+            <!-- -------------- FIN PLUG IN FACEBOOK SIDEBAR --------- -->
+            
+        </aside>
+        <footer>
+            <p>pokefanleoretrogames.com no contiene en su alojamiento ninguna clase de archivos, dicho alojamineto es freesourse junto con el codigo de esta pagina y los plugins utilizados como github, facebook y google</p>
+            <p>"Libertad de tránsito y acceso a la informacion debe ser un derecho, y es diferente a la pirateria, éste último es un tema que merece debate y queda en cada persona una visión própia"</p>
+            <ul>
+                <li><a href="#">PokefanleoRetrogames</a></li>
+                <li><a href="#">Juegos de PC</a></li>
+                <li><a href="#">Donar</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+        </footer>
+        <div class="ir-arriba">
+            <span class="icon-down-open"></span>
+        </div>
     </div>
-    <footer>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nam, quis earum libero dignissimos voluptatem amet similique, ipsam id, ex aut excepturi dolorum ea tenetur vitae velit. Illum, blanditiis, molestiae!as
-    </footer>
-    <!-- -------------------------- Zona de Scripts ---------------------- -->
-    <script src="js/scripts.js"></script>
+    <a href="#" target="_blank" class="publicidad"></a>
     
-    <!-- -------------------------- Termina zona de Scripts -------------- -->
-</body></html>
+    
+    
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
