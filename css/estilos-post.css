@@ -13,7 +13,7 @@
 }
 
 .post-encabezado img {
-    width: 180px;
+    width: 200px;
     height: 100%;
 }
 
@@ -26,12 +26,13 @@
 }
 
 .post h2 {
-    background: rgba(7, 55, 99, 1);
+    background: #227093;
     margin: 10px 0;
     color: white;
     padding: 10px;
     border-right: 15px solid rgba(0, 0, 0, .3);
     border-left: 15px solid rgba(0, 0, 0, .3);
+    text-transform: uppercase;
 }
 
 .requicitos p {
@@ -56,6 +57,10 @@
     border-style: double
 }
 
+.peques {
+    width: 60%;
+    margin: 0 auto;
+}
 .video-instalacion {
     position: relative;
     padding-bottom: 47.58%;
@@ -78,6 +83,7 @@
 
 .video-instalacion img {
     width: 100%;
+    
 }
 
 .unico-enlace {
@@ -94,9 +100,10 @@
     color: #073763;
     font-size: 23px;
     background: none;
-    margin: 0 190px;
+    margin: 0 auto;
     padding: .5em;
     border: 3px solid #073763;
+    width: 75%;
 }
 
 .lista-links-instaladores a:hover {
@@ -145,9 +152,10 @@
     color: #073763;
     font-size: 23px;
     background: none;
-    margin: 0 150px;
+    margin: 0 auto;
     padding: .5em;
     border: 3px solid #073763;
+    width: 75%;
 }
 
 .daemond-lista a:hover {
@@ -169,7 +177,7 @@
 
 .lista-link-portadas {
     width: 60%;
-    margin: 0 20%;
+    margin: 0 auto;
     display: none;
 }
 
@@ -247,4 +255,14 @@
     .lista-link-portadas img {
         width: 80%;
     }
+    .img-prev {
+        width: 100%;
+    }
+    .peques {
+        width: 90%;
+    }
+    .post-encabezado img {
+    width: 200px;
+    height: 100%;
+}
 }
